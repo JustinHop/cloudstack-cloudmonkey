@@ -4,7 +4,7 @@ RUN apk --no-cache --update add go git make musl-dev curl ca-certificates
 
 ENV GOPATH /go
 
-RUN go get github.com/apache/cloudstack-cloudmonkey
+RUN go get github.com/JustinHop/cloudstack-cloudmonkey
 
 #FROM alpine:3.9
 #
