@@ -4,9 +4,7 @@ RELEASE=2019-06-25
 
 exec docker run -it --rm \
     --name=cloudmonkey-$$ \
-    --network=container:tmvpn \
-    --volume $HOME/Profile/inputrc:/root/.inputrc:ro \
-    --volume $HOME/.cloudmonkey:/cloudmonkey \
+    #--network=container:tmvpn \
     --volume $HOME/.cmk:/cmk \
     jhoppensteadt/cloudmonkey:$RELEASE "$@"
     #--entrypoint=/bin/sh \
