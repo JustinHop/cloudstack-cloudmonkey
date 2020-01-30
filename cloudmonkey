@@ -1,0 +1,10 @@
+#!/bin/bash
+
+RELEASE=2019-06-25
+
+    #--network=container:tmvpn \
+exec docker run -it --rm \
+    --name=cloudmonkey-$$ \
+    --volume $HOME/.cmk:/cmk \
+    jhoppensteadt/cloudmonkey:$RELEASE "$@"
+    #--entrypoint=/bin/sh \

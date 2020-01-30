@@ -48,7 +48,7 @@ func ExecPrompt() {
 		AutoComplete:      completer,
 		InterruptPrompt:   "^C",
 		EOFPrompt:         "exit",
-		VimMode:           false,
+		VimMode:           true,
 		HistorySearchFold: true,
 		FuncFilterInputRune: func(r rune) (rune, bool) {
 			switch r {
